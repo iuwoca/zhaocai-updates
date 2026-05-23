@@ -1,10 +1,10 @@
 {
-    "latest_version": "1.0.10",
-    "minimum_version": "1.0.10",
-    "download_url": "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.10/zhaocai_shell_macos",
-    "proxy_download_url": "https://zhaocai.iuwoca.com/download/zhaocai_shell_macos?v=1.0.10",
-    "sha256": "4ca42fd0cef5faaeedb5afc844c5d989691be7d9cfc590a7db51cb1717918660",
-    "release_url": "https://github.com/iuwoca/zhaocai-updates/releases/tag/v1.0.10",
-    "title": "macOS update",
-    "message": "Published macOS build."
+    "latest_version": "1.0.11",
+    "minimum_version": "1.0.11",
+    "download_url": "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.11/zhaocai_shell_macos",
+    "proxy_download_url": "https://zhaocai.iuwoca.com/download/zhaocai_shell_macos?v=1.0.11",
+    "sha256": "e1d286fc4e96f1ca7bdec4cc2c56b9e3484db068d64c2df30b0965a8f6b16551",
+    "release_url": "https://github.com/iuwoca/zhaocai-updates/releases/tag/v1.0.11",
+    "title": "招财系统需要更新",
+    "message": "已发布 1.0.11 版本，请更新后继续使用。"
 }
