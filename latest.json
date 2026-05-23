@@ -1,10 +1,10 @@
 {
-    "latest_version":  "1.0.8",
-    "minimum_version":  "1.0.8",
-    "download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.8/zhaocai_shell.exe",
-    "proxy_download_url":  "https://zhaocai.iuwoca.com/download/zhaocai_shell.exe?v=1.0.8",
-    "sha256":  "79f592a4641f10615c84ca295ad0e3ce7115c3aadb9944955716e9b8936d94f5",
-    "release_url":  "https://github.com/iuwoca/zhaocai-updates/releases/tag/v1.0.8",
-    "title":  "更新下载中转支持",
-    "message":  "新增 Cloudflare Worker 更新中转支持，后续可优先通过 zhaocai.iuwoca.com 检查更新和下载更新包。"
+    "latest_version":  "1.0.9",
+    "minimum_version":  "1.0.9",
+    "download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.9/zhaocai_shell.exe",
+    "proxy_download_url":  "https://zhaocai.iuwoca.com/download/zhaocai_shell.exe?v=1.0.9",
+    "sha256":  "f836946b1a82ee75b3cb1469462789992c63b89564440d571cf2d75942d04e55",
+    "release_url":  "https://github.com/iuwoca/zhaocai-updates/releases/tag/v1.0.9",
+    "title":  "自动更新清理旧文件",
+    "message":  "自动更新替换成功后不再保留旧版 exe 备份，并清理临时安装脚本。"
 }
