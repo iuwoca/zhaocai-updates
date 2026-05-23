@@ -1,9 +1,10 @@
 {
-    "latest_version":  "1.0.7",
-    "minimum_version":  "1.0.7",
-    "download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.7/zhaocai_shell.exe",
-    "sha256":  "f7fb86579a99854f26e9552225e9dafb5ec692bc3c07098140d09fa268961c07",
-    "release_url":  "https://github.com/iuwoca/zhaocai-updates/releases/tag/v1.0.7",
-    "title":  "更新下载进度显示",
-    "message":  "软件内自动更新时新增下载进度条、百分比和已下载大小显示。"
+    "latest_version":  "1.0.8",
+    "minimum_version":  "1.0.8",
+    "download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.8/zhaocai_shell.exe",
+    "proxy_download_url":  "https://zhaocai.iuwoca.com/download/zhaocai_shell.exe?v=1.0.8",
+    "sha256":  "79f592a4641f10615c84ca295ad0e3ce7115c3aadb9944955716e9b8936d94f5",
+    "release_url":  "https://github.com/iuwoca/zhaocai-updates/releases/tag/v1.0.8",
+    "title":  "更新下载中转支持",
+    "message":  "新增 Cloudflare Worker 更新中转支持，后续可优先通过 zhaocai.iuwoca.com 检查更新和下载更新包。"
 }
