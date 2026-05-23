@@ -1,8 +1,8 @@
 {
-    "latest_version":  "1.0.3",
-    "minimum_version":  "1.0.3",
-    "download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.3/zhaocai_shell.exe",
-    "release_url":  "https://github.com/iuwoca/zhaocai-updates/releases/tag/v1.0.3",
-    "title":  "",
-    "message":  ""
+    "latest_version":  "1.0.4",
+    "minimum_version":  "1.0.4",
+    "download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.4/zhaocai_shell.exe",
+    "release_url":  "https://github.com/iuwoca/zhaocai-updates/releases/tag/v1.0.4",
+    "title":  "重要更新：授权到期拦截修复",
+    "message":  "修复授权到期后仍可继续使用的问题。请立即更新到此版本，过期授权会被强制拦截。"
 }
