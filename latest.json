@@ -1,10 +1,10 @@
 {
-    "latest_version":  "1.0.10",
-    "minimum_version":  "1.0.10",
-    "download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.10/zhaocai_shell.exe",
-    "proxy_download_url":  "https://zhaocai.iuwoca.com/download/zhaocai_shell.exe?v=1.0.10",
-    "sha256":  "ea08b63189f44a42620b8b7cae4396141be2aafbb8e50856d12dad0efe1fab93",
-    "release_url":  "https://github.com/iuwoca/zhaocai-updates/releases/tag/v1.0.10",
-    "title":  "授权成功后自动进入软件",
-    "message":  "激活授权或导入 license.dat 成功后，会自动打开本地达人库主界面，无需用户重新打开软件。"
+    "latest_version":  "1.0.11",
+    "minimum_version":  "1.0.11",
+    "download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.11/zhaocai_shell.exe",
+    "proxy_download_url":  "https://zhaocai.iuwoca.com/download/zhaocai_shell.exe?v=1.0.11",
+    "sha256":  "f1fcb594dc31fdbfaafdc9dbcfdfebf6648f1bda901a70bbdad678bffcf3bd2b",
+    "release_url":  "https://github.com/iuwoca/zhaocai-updates/releases/tag/v1.0.11",
+    "title":  "招财系统需要更新",
+    "message":  "已发布 1.0.11 版本，请更新后继续使用。"
 }
