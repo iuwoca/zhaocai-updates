@@ -1,0 +1,10 @@
+{
+    "latest_version": "1.0.10",
+    "minimum_version": "1.0.10",
+    "download_url": "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.10/zhaocai_shell_macos",
+    "proxy_download_url": "https://zhaocai.iuwoca.com/download/zhaocai_shell_macos?v=1.0.10",
+    "sha256": "4ca42fd0cef5faaeedb5afc844c5d989691be7d9cfc590a7db51cb1717918660",
+    "release_url": "https://github.com/iuwoca/zhaocai-updates/releases/tag/v1.0.10",
+    "title": "macOS update",
+    "message": "Published macOS build."
+}
