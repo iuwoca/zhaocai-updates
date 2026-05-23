@@ -101,15 +101,14 @@ jobs:
 
       - name: Upload macOS asset to release
         env:
-          GH_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ secrets.SOURCE_REPO_TOKEN }}
           VERSION: ${{ inputs.version }}
         run: |
           tag="v${VERSION}"
-          if gh release view "$tag" --repo iuwoca/zhaocai-updates >/dev/null 2>&1; then
-            gh release upload "$tag" zhaocai/dist/zhaocai_shell_macos --repo iuwoca/zhaocai-updates --clobber
-          else
-            gh release create "$tag" zhaocai/dist/zhaocai_shell_macos --repo iuwoca/zhaocai-updates --title "Zhaocai $tag" --notes "Zhaocai $tag"
+          if ! gh release view "$tag" --repo iuwoca/zhaocai-updates >/dev/null 2>&1; then
+            gh release create "$tag" --repo iuwoca/zhaocai-updates --title "Zhaocai $tag" --notes "Zhaocai $tag"
           fi
+          gh release upload "$tag" zhaocai/dist/zhaocai_shell_macos --repo iuwoca/zhaocai-updates --clobber
 
       - name: Update macOS manifest
         env:
