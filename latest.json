@@ -1,9 +1,9 @@
 {
-    "latest_version":  "1.0.6",
-    "minimum_version":  "1.0.6",
-    "download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.6/zhaocai_shell.exe",
-    "sha256":  "3c6150ce16a39d420517d38c611f0221e00f69266029d00d0c643da6f2f9343f",
-    "release_url":  "https://github.com/iuwoca/zhaocai-updates/releases/tag/v1.0.6",
-    "title":  "界面文案更新",
-    "message":  "将“清空本地库”按钮文案调整为“清空全部本地库”。"
+    "latest_version":  "1.0.7",
+    "minimum_version":  "1.0.7",
+    "download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.7/zhaocai_shell.exe",
+    "sha256":  "f7fb86579a99854f26e9552225e9dafb5ec692bc3c07098140d09fa268961c07",
+    "release_url":  "https://github.com/iuwoca/zhaocai-updates/releases/tag/v1.0.7",
+    "title":  "更新下载进度显示",
+    "message":  "软件内自动更新时新增下载进度条、百分比和已下载大小显示。"
 }
