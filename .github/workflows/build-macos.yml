@@ -83,8 +83,9 @@ jobs:
 
       - name: Prepare source layout
         run: |
-          mkdir -p sys_admin-master
-          ln -s "$GITHUB_WORKSPACE/python_qt_jixing" "$GITHUB_WORKSPACE/sys_admin-master/python_qt_jixing"
+          test -f "$GITHUB_WORKSPACE/python_qt_jixing/jixing_client.py"
+          test -f "$GITHUB_WORKSPACE/zhaocai/vendor_sources/python_qt_jixing/browser_cookie_login.py"
+          test -f "$GITHUB_WORKSPACE/zhaocai/vendor_sources/jixing/xingtu_client.py"
 
       - name: Build macOS shell
         env:
