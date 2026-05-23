@@ -126,7 +126,7 @@ jobs:
           asset = "zhaocai_shell_macos"
           github_url = f"https://github.com/iuwoca/zhaocai-updates/releases/download/{tag}/{asset}"
           worker_url = f"https://zhaocai.iuwoca.com/download/{asset}?v={version}"
-          ghproxy_url = f"https://ghproxy.vip/{github_url}"
+          ghproxy_url = f"https://ghfast.top/{github_url}"
           data = {
               "latest_version": version,
               "minimum_version": version,
