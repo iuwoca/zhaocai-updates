@@ -124,11 +124,17 @@ jobs:
           version = os.environ["VERSION"]
           tag = f"v{version}"
           asset = "zhaocai_shell_macos"
+          github_url = f"https://github.com/iuwoca/zhaocai-updates/releases/download/{tag}/{asset}"
+          worker_url = f"https://zhaocai.iuwoca.com/download/{asset}?v={version}"
+          ghproxy_url = f"https://ghproxy.vip/{github_url}"
           data = {
               "latest_version": version,
               "minimum_version": version,
-              "download_url": f"https://github.com/iuwoca/zhaocai-updates/releases/download/{tag}/{asset}",
-              "proxy_download_url": f"https://zhaocai.iuwoca.com/download/{asset}?v={version}",
+              "download_url": ghproxy_url,
+              "download_urls": [ghproxy_url, worker_url, github_url],
+              "proxy_download_url": worker_url,
+              "github_download_url": github_url,
+              "fallback_download_url": worker_url,
               "sha256": os.environ["SHA256"],
               "release_url": f"https://github.com/iuwoca/zhaocai-updates/releases/tag/{tag}",
               "title": "招财系统需要更新",
