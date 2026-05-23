@@ -1,8 +1,15 @@
 {
     "latest_version":  "1.0.11",
     "minimum_version":  "1.0.11",
-    "download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.11/zhaocai_shell.exe",
+    "download_url":  "https://ghproxy.vip/https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.11/zhaocai_shell.exe",
+    "download_urls":  [
+                          "https://ghproxy.vip/https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.11/zhaocai_shell.exe",
+                          "https://zhaocai.iuwoca.com/download/zhaocai_shell.exe?v=1.0.11",
+                          "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.11/zhaocai_shell.exe"
+                      ],
     "proxy_download_url":  "https://zhaocai.iuwoca.com/download/zhaocai_shell.exe?v=1.0.11",
+    "github_download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.11/zhaocai_shell.exe",
+    "fallback_download_url":  "https://zhaocai.iuwoca.com/download/zhaocai_shell.exe?v=1.0.11",
     "sha256":  "f1fcb594dc31fdbfaafdc9dbcfdfebf6648f1bda901a70bbdad678bffcf3bd2b",
     "release_url":  "https://github.com/iuwoca/zhaocai-updates/releases/tag/v1.0.11",
     "title":  "招财系统需要更新",
