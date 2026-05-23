@@ -1,9 +1,9 @@
 {
-    "latest_version":  "1.0.5",
-    "minimum_version":  "1.0.5",
-    "download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.5/zhaocai_shell.exe",
-    "sha256":  "aeaa6f28abb15b9617a7b1134548d844556d4956f8ee797f91af10178fb381fd",
-    "release_url":  "https://github.com/iuwoca/zhaocai-updates/releases/tag/v1.0.5",
-    "title":  "重要更新：支持软件内自动更新",
-    "message":  "新增软件内自动下载、替换并重启更新能力；后续版本可直接在软件内完成强制更新。"
+    "latest_version":  "1.0.6",
+    "minimum_version":  "1.0.6",
+    "download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.6/zhaocai_shell.exe",
+    "sha256":  "3c6150ce16a39d420517d38c611f0221e00f69266029d00d0c643da6f2f9343f",
+    "release_url":  "https://github.com/iuwoca/zhaocai-updates/releases/tag/v1.0.6",
+    "title":  "界面文案更新",
+    "message":  "将“清空本地库”按钮文案调整为“清空全部本地库”。"
 }
