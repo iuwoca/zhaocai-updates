@@ -1,0 +1,153 @@
+name: Build macOS Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version to build, for example 1.0.10"
+        required: true
+        type: string
+      source_ref:
+        description: "zhaocai source branch, tag, or commit"
+        required: false
+        default: "main"
+        type: string
+      pgy_ref:
+        description: "pgy source branch, tag, or commit"
+        required: false
+        default: "main"
+        type: string
+      jixing_ref:
+        description: "python_qt_jixing source branch, tag, or commit"
+        required: false
+        default: "main"
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  build-macos:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout update repository
+        uses: actions/checkout@v4
+        with:
+          path: updates
+
+      - name: Checkout zhaocai source
+        uses: actions/checkout@v4
+        with:
+          repository: iuwoca/zhaocai
+          ref: ${{ inputs.source_ref }}
+          token: ${{ secrets.SOURCE_REPO_TOKEN }}
+          path: zhaocai
+
+      - name: Checkout pgy source
+        uses: actions/checkout@v4
+        with:
+          repository: iuwoca/pgy
+          ref: ${{ inputs.pgy_ref }}
+          token: ${{ secrets.SOURCE_REPO_TOKEN }}
+          path: pgy
+
+      - name: Checkout python_qt_jixing source
+        uses: actions/checkout@v4
+        with:
+          repository: iuwoca/python_qt_jixing
+          ref: ${{ inputs.jixing_ref }}
+          token: ${{ secrets.SOURCE_REPO_TOKEN }}
+          path: python_qt_jixing
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.23.x"
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+          cache-dependency-path: pgy/package-lock.json
+
+      - name: Install pgy Node dependencies
+        run: npm ci
+        working-directory: pgy
+
+      - name: Prepare source layout
+        run: |
+          mkdir -p sys_admin-master
+          ln -s "$GITHUB_WORKSPACE/python_qt_jixing" "$GITHUB_WORKSPACE/sys_admin-master/python_qt_jixing"
+
+      - name: Build macOS shell
+        env:
+          ZHAOCAI_AES_KEY_HEX: ${{ secrets.ZHAOCAI_AES_KEY_HEX }}
+        run: ./build_macos.sh
+        working-directory: zhaocai
+
+      - name: Compute SHA256
+        id: sha
+        run: |
+          value="$(shasum -a 256 zhaocai/dist/zhaocai_shell_macos | awk '{print tolower($1)}')"
+          echo "value=$value" >> "$GITHUB_OUTPUT"
+
+      - name: Upload macOS asset to release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ inputs.version }}
+        run: |
+          tag="v${VERSION}"
+          if gh release view "$tag" --repo iuwoca/zhaocai-updates >/dev/null 2>&1; then
+            gh release upload "$tag" zhaocai/dist/zhaocai_shell_macos --repo iuwoca/zhaocai-updates --clobber
+          else
+            gh release create "$tag" zhaocai/dist/zhaocai_shell_macos --repo iuwoca/zhaocai-updates --title "Zhaocai $tag" --notes "Zhaocai $tag"
+          fi
+
+      - name: Update macOS manifest
+        env:
+          VERSION: ${{ inputs.version }}
+          SHA256: ${{ steps.sha.outputs.value }}
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          version = os.environ["VERSION"]
+          tag = f"v{version}"
+          asset = "zhaocai_shell_macos"
+          data = {
+              "latest_version": version,
+              "minimum_version": version,
+              "download_url": f"https://github.com/iuwoca/zhaocai-updates/releases/download/{tag}/{asset}",
+              "proxy_download_url": f"https://zhaocai.iuwoca.com/download/{asset}?v={version}",
+              "sha256": os.environ["SHA256"],
+              "release_url": f"https://github.com/iuwoca/zhaocai-updates/releases/tag/{tag}",
+              "title": "macOS update",
+              "message": "Published macOS build.",
+          }
+          Path("updates/latest-macos.json").write_text(
+              json.dumps(data, ensure_ascii=False, indent=4),
+              encoding="utf-8",
+          )
+          PY
+
+      - name: Commit macOS manifest
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add latest-macos.json
+          if git diff --cached --quiet; then
+            echo "latest-macos.json already up to date."
+          else
+            git commit -m "Update macOS manifest to v${{ inputs.version }}"
+            git push
+          fi
+        working-directory: updates
