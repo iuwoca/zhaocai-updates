@@ -1,18 +1,18 @@
 {
-    "latest_version": "1.0.19",
-    "minimum_version": "1.0.19",
-    "download_url": "https://zhaocai.iuwoca.com/download/%E6%8B%9B%E8%B4%A2%E7%B3%BB%E7%BB%9F_macos?v=1.0.19",
+    "latest_version": "1.0.20",
+    "minimum_version": "1.0.20",
+    "download_url": "https://zhaocai.iuwoca.com/download/%E6%8B%9B%E8%B4%A2%E7%B3%BB%E7%BB%9F_macos?v=1.0.20",
     "download_urls": [
-        "https://ghfast.top/https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.19/zhaocai_shell_macos",
-        "https://zhaocai.iuwoca.com/download/%E6%8B%9B%E8%B4%A2%E7%B3%BB%E7%BB%9F_macos?v=1.0.19",
-        "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.19/zhaocai_shell_macos",
-        "https://zhaocai.iuwoca.com/download/zhaocai_shell_macos?v=1.0.19"
+        "https://ghfast.top/https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.20/zhaocai_shell_macos",
+        "https://zhaocai.iuwoca.com/download/%E6%8B%9B%E8%B4%A2%E7%B3%BB%E7%BB%9F_macos?v=1.0.20",
+        "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.20/zhaocai_shell_macos",
+        "https://zhaocai.iuwoca.com/download/zhaocai_shell_macos?v=1.0.20"
     ],
-    "proxy_download_url": "https://zhaocai.iuwoca.com/download/%E6%8B%9B%E8%B4%A2%E7%B3%BB%E7%BB%9F_macos?v=1.0.19",
-    "github_download_url": "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.19/zhaocai_shell_macos",
-    "fallback_download_url": "https://zhaocai.iuwoca.com/download/zhaocai_shell_macos?v=1.0.19",
-    "sha256": "38a526dbd835de8771f51c1116b4435d2e708d5f603976dc4aebe7a748ac1970",
-    "release_url": "https://github.com/iuwoca/zhaocai-updates/releases/tag/v1.0.19",
+    "proxy_download_url": "https://zhaocai.iuwoca.com/download/%E6%8B%9B%E8%B4%A2%E7%B3%BB%E7%BB%9F_macos?v=1.0.20",
+    "github_download_url": "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.20/zhaocai_shell_macos",
+    "fallback_download_url": "https://zhaocai.iuwoca.com/download/zhaocai_shell_macos?v=1.0.20",
+    "sha256": "3d1b92bf923017616bbbf6c81183152427c910bec235762d7fc2b3f39143143e",
+    "release_url": "https://github.com/iuwoca/zhaocai-updates/releases/tag/v1.0.20",
     "title": "招财系统需要更新",
-    "message": "已发布 1.0.19 版本，请更新后继续使用。"
+    "message": "已发布 1.0.20 版本，请更新后继续使用。"
 }
