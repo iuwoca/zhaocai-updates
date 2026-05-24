@@ -12,6 +12,6 @@
     "fallback_download_url":  "https://zhaocai.iuwoca.com/download/zhaocai_shell.exe?v=1.0.15",
     "sha256":  "8c436e06b5e90d1a759067019b5727cf4063aba5b658016d8b9053d3675afb92",
     "release_url":  "https://github.com/iuwoca/zhaocai-updates/releases/tag/v1.0.15",
-    "title":  "",
-    "message":  ""
+    "title":  "招财系统需要更新",
+    "message":  "已发布 1.0.15 版本，请更新后继续使用。"
 }
