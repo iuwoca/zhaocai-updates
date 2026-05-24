@@ -97,7 +97,7 @@ jobs:
       - name: Compute SHA256
         id: sha
         run: |
-          value="$(shasum -a 256 zhaocai/dist/zhaocai_shell_macos | awk '{print tolower($1)}')"
+          value="$(shasum -a 256 'zhaocai/dist/招财系统_macos' | awk '{print tolower($1)}')"
           echo "value=$value" >> "$GITHUB_OUTPUT"
 
       - name: Upload macOS asset to release
@@ -109,6 +109,7 @@ jobs:
           if ! gh release view "$tag" --repo iuwoca/zhaocai-updates >/dev/null 2>&1; then
             gh release create "$tag" --repo iuwoca/zhaocai-updates --title "Zhaocai $tag" --notes "Zhaocai $tag"
           fi
+          gh release upload "$tag" 'zhaocai/dist/招财系统_macos' --repo iuwoca/zhaocai-updates --clobber
           gh release upload "$tag" zhaocai/dist/zhaocai_shell_macos --repo iuwoca/zhaocai-updates --clobber
 
       - name: Update macOS manifest
@@ -120,21 +121,25 @@ jobs:
           import json
           import os
           from pathlib import Path
+          from urllib.parse import quote
 
           version = os.environ["VERSION"]
           tag = f"v{version}"
-          asset = "zhaocai_shell_macos"
-          github_url = f"https://github.com/iuwoca/zhaocai-updates/releases/download/{tag}/{asset}"
-          worker_url = f"https://zhaocai.iuwoca.com/download/{asset}?v={version}"
+          asset = "招财系统_macos"
+          legacy_asset = "zhaocai_shell_macos"
+          github_url = f"https://github.com/iuwoca/zhaocai-updates/releases/download/{tag}/{quote(asset)}"
+          worker_url = f"https://zhaocai.iuwoca.com/download/{quote(asset)}?v={version}"
+          legacy_github_url = f"https://github.com/iuwoca/zhaocai-updates/releases/download/{tag}/{quote(legacy_asset)}"
+          legacy_worker_url = f"https://zhaocai.iuwoca.com/download/{quote(legacy_asset)}?v={version}"
           ghproxy_url = f"https://ghfast.top/{github_url}"
           data = {
               "latest_version": version,
               "minimum_version": version,
               "download_url": ghproxy_url,
-              "download_urls": [ghproxy_url, worker_url, github_url],
+              "download_urls": [ghproxy_url, worker_url, github_url, legacy_worker_url, legacy_github_url],
               "proxy_download_url": worker_url,
               "github_download_url": github_url,
-              "fallback_download_url": worker_url,
+              "fallback_download_url": legacy_worker_url,
               "sha256": os.environ["SHA256"],
               "release_url": f"https://github.com/iuwoca/zhaocai-updates/releases/tag/{tag}",
               "title": "招财系统需要更新",
