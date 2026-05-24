@@ -1,17 +1,17 @@
 {
-    "latest_version":  "1.0.14",
-    "minimum_version":  "1.0.14",
-    "download_url":  "https://ghfast.top/https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.14/zhaocai_shell.exe",
+    "latest_version":  "1.0.15",
+    "minimum_version":  "1.0.15",
+    "download_url":  "https://ghfast.top/https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.15/zhaocai_shell.exe",
     "download_urls":  [
-                          "https://ghfast.top/https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.14/zhaocai_shell.exe",
-                          "https://zhaocai.iuwoca.com/download/zhaocai_shell.exe?v=1.0.14",
-                          "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.14/zhaocai_shell.exe"
+                          "https://ghfast.top/https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.15/zhaocai_shell.exe",
+                          "https://zhaocai.iuwoca.com/download/zhaocai_shell.exe?v=1.0.15",
+                          "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.15/zhaocai_shell.exe"
                       ],
-    "proxy_download_url":  "https://zhaocai.iuwoca.com/download/zhaocai_shell.exe?v=1.0.14",
-    "github_download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.14/zhaocai_shell.exe",
-    "fallback_download_url":  "https://zhaocai.iuwoca.com/download/zhaocai_shell.exe?v=1.0.14",
-    "sha256":  "bb0c3efe01698a73fe7bae4a6efc2829e39ae80853197a974bce61d5c734f098",
-    "release_url":  "https://github.com/iuwoca/zhaocai-updates/releases/tag/v1.0.14",
-    "title":  "招财系统需要更新",
-    "message":  "已发布 1.0.14 版本，请更新后继续使用。"
+    "proxy_download_url":  "https://zhaocai.iuwoca.com/download/zhaocai_shell.exe?v=1.0.15",
+    "github_download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.15/zhaocai_shell.exe",
+    "fallback_download_url":  "https://zhaocai.iuwoca.com/download/zhaocai_shell.exe?v=1.0.15",
+    "sha256":  "8c436e06b5e90d1a759067019b5727cf4063aba5b658016d8b9053d3675afb92",
+    "release_url":  "https://github.com/iuwoca/zhaocai-updates/releases/tag/v1.0.15",
+    "title":  "",
+    "message":  ""
 }
