@@ -11,7 +11,7 @@
     "proxy_download_url": "https://zhaocai.iuwoca.com/download/%E6%8B%9B%E8%B4%A2%E7%B3%BB%E7%BB%9F_macos?v=1.0.17",
     "github_download_url": "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.17/zhaocai_shell_macos",
     "fallback_download_url": "https://zhaocai.iuwoca.com/download/zhaocai_shell_macos?v=1.0.17",
-    "sha256": "42a0fbff03b0a468304cc02ad934d3beb07c0992c7e1d1b43314934e4c346cc4",
+    "sha256": "91d7b146d00674cb7bb0df2a3bc4e8d1fc258d02eecb2e240c1f3e6c4d55b20d",
     "release_url": "https://github.com/iuwoca/zhaocai-updates/releases/tag/v1.0.17",
     "title": "招财系统需要更新",
     "message": "已发布 1.0.17 版本，请更新后继续使用。"
