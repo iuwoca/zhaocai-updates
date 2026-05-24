@@ -1,18 +1,18 @@
 {
-    "latest_version":  "1.0.19",
-    "minimum_version":  "1.0.19",
-    "download_url":  "https://zhaocai.iuwoca.com/download/%E6%8B%9B%E8%B4%A2%E7%B3%BB%E7%BB%9F.exe?v=1.0.19",
+    "latest_version":  "1.0.20",
+    "minimum_version":  "1.0.20",
+    "download_url":  "https://zhaocai.iuwoca.com/download/%E6%8B%9B%E8%B4%A2%E7%B3%BB%E7%BB%9F.exe?v=1.0.20",
     "download_urls":  [
-                          "https://ghfast.top/https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.19/zhaocai_shell.exe",
-                          "https://zhaocai.iuwoca.com/download/%E6%8B%9B%E8%B4%A2%E7%B3%BB%E7%BB%9F.exe?v=1.0.19",
-                          "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.19/zhaocai_shell.exe",
-                          "https://zhaocai.iuwoca.com/download/zhaocai_shell.exe?v=1.0.19"
+                          "https://ghfast.top/https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.20/zhaocai_shell.exe",
+                          "https://zhaocai.iuwoca.com/download/%E6%8B%9B%E8%B4%A2%E7%B3%BB%E7%BB%9F.exe?v=1.0.20",
+                          "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.20/zhaocai_shell.exe",
+                          "https://zhaocai.iuwoca.com/download/zhaocai_shell.exe?v=1.0.20"
                       ],
-    "proxy_download_url":  "https://zhaocai.iuwoca.com/download/%E6%8B%9B%E8%B4%A2%E7%B3%BB%E7%BB%9F.exe?v=1.0.19",
-    "github_download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.19/zhaocai_shell.exe",
-    "fallback_download_url":  "https://zhaocai.iuwoca.com/download/zhaocai_shell.exe?v=1.0.19",
-    "sha256":  "fd321b315a79821bdf694b7c1e9d822774dc85c9357e1d294aecffc476441807",
-    "release_url":  "https://github.com/iuwoca/zhaocai-updates/releases/tag/v1.0.19",
+    "proxy_download_url":  "https://zhaocai.iuwoca.com/download/%E6%8B%9B%E8%B4%A2%E7%B3%BB%E7%BB%9F.exe?v=1.0.20",
+    "github_download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.20/zhaocai_shell.exe",
+    "fallback_download_url":  "https://zhaocai.iuwoca.com/download/zhaocai_shell.exe?v=1.0.20",
+    "sha256":  "a111bc974e08eb79b9f81fbb9a59b5e2ad9f0175676dadff141d2b25182ceb20",
+    "release_url":  "https://github.com/iuwoca/zhaocai-updates/releases/tag/v1.0.20",
     "title":  "招财系统需要更新",
-    "message":  "已发布 1.0.19 版本，请更新后继续使用。"
+    "message":  "已发布 1.0.20 版本，请更新后继续使用。"
 }
