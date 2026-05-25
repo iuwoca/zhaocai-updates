@@ -7,7 +7,7 @@ This public repository hosts update manifests and release assets for Zhaocai.
 The `Build macOS Release` workflow builds the macOS shell and publishes it to this repository's Release assets as:
 
 ```text
-zhaocai_shell_macos
+zhaocai_shell_macos.app.zip
 ```
 
 It also updates:
@@ -27,4 +27,4 @@ Run it from GitHub Actions with:
 Actions -> Build macOS Release -> Run workflow
 ```
 
-Use the same version as `zhaocai/version.py`, for example `1.0.10`.
+Use the same version as `zhaocai/version.py`, for example `1.0.10`. Users download `招财系统.app.zip`, unzip it, and open `招财系统.app`.
