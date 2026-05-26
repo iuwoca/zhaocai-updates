@@ -1,18 +1,18 @@
 {
-    "latest_version": "1.0.43",
-    "minimum_version": "1.0.43",
-    "download_url": "https://zhaocai.iuwoca.com/download/%E6%8B%9B%E8%B4%A2%E7%B3%BB%E7%BB%9F.dmg?v=1.0.43",
+    "latest_version": "1.0.44",
+    "minimum_version": "1.0.44",
+    "download_url": "https://zhaocai.iuwoca.com/download/%E6%8B%9B%E8%B4%A2%E7%B3%BB%E7%BB%9F.dmg?v=1.0.44",
     "download_urls": [
-        "https://ghfast.top/https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.43/zhaocai_shell_macos.dmg",
-        "https://zhaocai.iuwoca.com/download/%E6%8B%9B%E8%B4%A2%E7%B3%BB%E7%BB%9F.dmg?v=1.0.43",
-        "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.43/zhaocai_shell_macos.dmg",
-        "https://zhaocai.iuwoca.com/download/zhaocai_shell_macos.dmg?v=1.0.43"
+        "https://ghfast.top/https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.44/zhaocai_shell_macos.dmg",
+        "https://zhaocai.iuwoca.com/download/%E6%8B%9B%E8%B4%A2%E7%B3%BB%E7%BB%9F.dmg?v=1.0.44",
+        "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.44/zhaocai_shell_macos.dmg",
+        "https://zhaocai.iuwoca.com/download/zhaocai_shell_macos.dmg?v=1.0.44"
     ],
-    "proxy_download_url": "https://zhaocai.iuwoca.com/download/%E6%8B%9B%E8%B4%A2%E7%B3%BB%E7%BB%9F.dmg?v=1.0.43",
-    "github_download_url": "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.43/zhaocai_shell_macos.dmg",
-    "fallback_download_url": "https://zhaocai.iuwoca.com/download/zhaocai_shell_macos.dmg?v=1.0.43",
-    "sha256": "02e36b964c2cacb704b1f10bc11c904a1d71490bdaf1caeb8ed12f49d6104744",
-    "release_url": "https://github.com/iuwoca/zhaocai-updates/releases/tag/v1.0.43",
+    "proxy_download_url": "https://zhaocai.iuwoca.com/download/%E6%8B%9B%E8%B4%A2%E7%B3%BB%E7%BB%9F.dmg?v=1.0.44",
+    "github_download_url": "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.44/zhaocai_shell_macos.dmg",
+    "fallback_download_url": "https://zhaocai.iuwoca.com/download/zhaocai_shell_macos.dmg?v=1.0.44",
+    "sha256": "a01d319ee9438993d82b6bb16da02379ca0939619fbada4bfc95fb5f171479a7",
+    "release_url": "https://github.com/iuwoca/zhaocai-updates/releases/tag/v1.0.44",
     "title": "招财系统需要更新",
-    "message": "已发布 1.0.43 版本，请更新后继续使用。"
+    "message": "已发布 1.0.44 版本，请更新后继续使用。"
 }
