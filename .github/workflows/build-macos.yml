@@ -125,8 +125,6 @@ jobs:
         run: |
           value="$(shasum -a 256 "zhaocai/dist/zhaocai_shell_macos.app.zip" | awk '{print tolower($1)}')"
           echo "value=$value" >> "$GITHUB_OUTPUT"
-          dmg_value="$(shasum -a 256 "zhaocai/dist/zhaocai_shell_macos.dmg" | awk '{print tolower($1)}')"
-          echo "dmg_value=$dmg_value" >> "$GITHUB_OUTPUT"
 
       - name: Upload macOS asset to release
         env:
@@ -138,7 +136,6 @@ jobs:
             gh release create "$tag" --repo iuwoca/zhaocai-updates --title "Zhaocai $tag" --notes "Zhaocai $tag"
           fi
           gh release upload "$tag" "zhaocai/dist/zhaocai_shell_macos.app.zip" --repo iuwoca/zhaocai-updates --clobber
-          gh release upload "$tag" "zhaocai/dist/zhaocai_shell_macos.dmg" --repo iuwoca/zhaocai-updates --clobber
 
       - name: Update macOS manifest
         env:
