@@ -1,6 +1,12 @@
 name: Build macOS Release
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/build-macos.yml"
+      - "macos-build-trigger.txt"
   workflow_dispatch:
     inputs:
       version:
@@ -41,7 +47,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: iuwoca/zhaocai
-          ref: ${{ inputs.source_ref }}
+          ref: ${{ inputs.source_ref || 'main' }}
           token: ${{ secrets.SOURCE_REPO_TOKEN }}
           path: zhaocai
 
@@ -49,7 +55,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: iuwoca/pgy
-          ref: ${{ inputs.pgy_ref }}
+          ref: ${{ inputs.pgy_ref || 'main' }}
           token: ${{ secrets.SOURCE_REPO_TOKEN }}
           path: pgy
 
@@ -57,7 +63,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: iuwoca/python_qt_jixing
-          ref: ${{ inputs.jixing_ref }}
+          ref: ${{ inputs.jixing_ref || 'main' }}
           token: ${{ secrets.SOURCE_REPO_TOKEN }}
           path: python_qt_jixing
 
@@ -120,6 +126,27 @@ jobs:
         run: ./build_macos.sh
         working-directory: zhaocai
 
+      - name: Resolve release version
+        id: release_version
+        env:
+          INPUT_VERSION: ${{ inputs.version }}
+        run: |
+          if [[ -n "$INPUT_VERSION" ]]; then
+            value="$INPUT_VERSION"
+          else
+            value="$(python3 - <<'PY'
+          import re
+          from pathlib import Path
+          text = Path("zhaocai/version.py").read_text(encoding="utf-8")
+          match = re.search(r'APP_VERSION\s*=\s*"([^"]+)"', text)
+          if not match:
+              raise SystemExit("Cannot read APP_VERSION")
+          print(match.group(1))
+          PY
+            )"
+          fi
+          echo "value=$value" >> "$GITHUB_OUTPUT"
+
       - name: Compute SHA256
         id: sha
         run: |
@@ -129,7 +156,7 @@ jobs:
       - name: Upload macOS asset to release
         env:
           GH_TOKEN: ${{ secrets.SOURCE_REPO_TOKEN }}
-          VERSION: ${{ inputs.version }}
+          VERSION: ${{ steps.release_version.outputs.value }}
         run: |
           tag="v${VERSION}"
           if ! gh release view "$tag" --repo iuwoca/zhaocai-updates >/dev/null 2>&1; then
@@ -139,7 +166,7 @@ jobs:
 
       - name: Update macOS manifest
         env:
-          VERSION: ${{ inputs.version }}
+          VERSION: ${{ steps.release_version.outputs.value }}
           SHA256: ${{ steps.sha.outputs.value }}
         run: |
           python3 - <<'PY'
@@ -178,6 +205,7 @@ jobs:
       - name: Commit macOS manifest
         env:
           SOURCE_REPO_TOKEN: ${{ secrets.SOURCE_REPO_TOKEN }}
+          VERSION: ${{ steps.release_version.outputs.value }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -185,7 +213,7 @@ jobs:
           if git diff --cached --quiet; then
             echo "latest-macos.json already up to date."
           else
-            git commit -m "Update macOS manifest to v${{ inputs.version }}"
+            git commit -m "Update macOS manifest to v${VERSION}"
             git push "https://x-access-token:${SOURCE_REPO_TOKEN}@github.com/iuwoca/zhaocai-updates.git" HEAD:main
           fi
         working-directory: updates
