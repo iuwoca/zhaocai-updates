@@ -7,6 +7,9 @@ on:
     paths:
       - ".github/workflows/release-macos-1-0-42.yml"
   workflow_dispatch:
+  repository_dispatch:
+    types:
+      - release-macos-1-0-42
 
 permissions:
   contents: write
