@@ -123,7 +123,7 @@ jobs:
       - name: Compute SHA256
         id: sha
         run: |
-          value="$(shasum -a 256 "zhaocai/dist/zhaocai_shell_macos.app.zip" | awk '{print tolower($1)}')"
+          value="$(shasum -a 256 "zhaocai/dist/zhaocai_shell_macos.dmg" | awk '{print tolower($1)}')"
           echo "value=$value" >> "$GITHUB_OUTPUT"
 
       - name: Upload macOS asset to release
@@ -135,7 +135,7 @@ jobs:
           if ! gh release view "$tag" --repo iuwoca/zhaocai-updates >/dev/null 2>&1; then
             gh release create "$tag" --repo iuwoca/zhaocai-updates --title "Zhaocai $tag" --notes "Zhaocai $tag"
           fi
-          gh release upload "$tag" "zhaocai/dist/zhaocai_shell_macos.app.zip" --repo iuwoca/zhaocai-updates --clobber
+          gh release upload "$tag" "zhaocai/dist/zhaocai_shell_macos.dmg" --repo iuwoca/zhaocai-updates --clobber
 
       - name: Update macOS manifest
         env:
@@ -150,8 +150,8 @@ jobs:
 
           version = os.environ["VERSION"]
           tag = f"v{version}"
-          asset = "招财系统.app.zip"
-          source_asset = "zhaocai_shell_macos.app.zip"
+          asset = "招财系统.dmg"
+          source_asset = "zhaocai_shell_macos.dmg"
           worker_url = f"https://zhaocai.iuwoca.com/download/{quote(asset)}?v={version}"
           source_github_url = f"https://github.com/iuwoca/zhaocai-updates/releases/download/{tag}/{quote(source_asset)}"
           source_worker_url = f"https://zhaocai.iuwoca.com/download/{quote(source_asset)}?v={version}"
