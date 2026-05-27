@@ -1,0 +1,2 @@
+# 每行一个机器码，例如：
+# MC-ZHAOCAI-V1-XXXX-XXXX-XXXX-XXXX-XXXX-X
