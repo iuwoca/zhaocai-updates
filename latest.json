@@ -11,7 +11,7 @@
     "proxy_download_url":  "https://zhaocai.iuwoca.com/download/%E6%8B%9B%E8%B4%A2%E7%B3%BB%E7%BB%9F.exe?v=1.0.46",
     "github_download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.46/zhaocai_shell.exe",
     "fallback_download_url":  "https://zhaocai.iuwoca.com/download/zhaocai_shell.exe?v=1.0.46",
-    "sha256":  "a5ae039cd88914b93efe73d641c3428e45f485da0a4131bf0e822e55068d7c6a",
+    "sha256":  "3721d5397dfd6ac44bddbcbfc2ec7f6c5f05a2c5319a8ab2f030cd5196e4df62",
     "release_url":  "https://github.com/iuwoca/zhaocai-updates/releases/tag/v1.0.46",
     "title":  "招财系统需要更新",
     "message":  "已发布 1.0.46 版本，请更新后继续使用。"
