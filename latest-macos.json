@@ -1,16 +1,16 @@
 {
-    "latest_version": "1.0.54",
-    "minimum_version": "1.0.54",
-    "download_url": "https://gh.xxooo.cf/https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.54/zhaocai_shell_macos.dmg",
+    "latest_version": "1.0.55",
+    "minimum_version": "1.0.55",
+    "download_url": "https://gh.xxooo.cf/https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.55/zhaocai_shell_macos.dmg",
     "download_urls": [
-        "https://gh.xxooo.cf/https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.54/zhaocai_shell_macos.dmg",
-        "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.54/zhaocai_shell_macos.dmg"
+        "https://gh.xxooo.cf/https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.55/zhaocai_shell_macos.dmg",
+        "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.55/zhaocai_shell_macos.dmg"
     ],
-    "proxy_download_url": "https://gh.xxooo.cf/https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.54/zhaocai_shell_macos.dmg",
-    "github_download_url": "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.54/zhaocai_shell_macos.dmg",
-    "fallback_download_url": "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.54/zhaocai_shell_macos.dmg",
-    "sha256": "fb7a6c01c8b8087384158ab827d82833126b92c23d652fefeacd4f3034871c7e",
-    "release_url": "https://github.com/iuwoca/zhaocai-updates/releases/tag/v1.0.54",
+    "proxy_download_url": "https://gh.xxooo.cf/https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.55/zhaocai_shell_macos.dmg",
+    "github_download_url": "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.55/zhaocai_shell_macos.dmg",
+    "fallback_download_url": "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.55/zhaocai_shell_macos.dmg",
+    "sha256": "6c186d9dcf4d80a92f688bb4743630cda5a8dcf53dc2b6ea59fd311cffb4f015",
+    "release_url": "https://github.com/iuwoca/zhaocai-updates/releases/tag/v1.0.55",
     "title": "macOS update",
     "message": "Published macOS build."
 }
