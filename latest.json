@@ -1,16 +1,16 @@
 {
-    "latest_version":  "1.0.56",
-    "minimum_version":  "1.0.56",
-    "download_url":  "https://gh.xxooo.cf/https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.56/zhaocai_shell.exe",
+    "latest_version":  "1.0.57",
+    "minimum_version":  "1.0.57",
+    "download_url":  "https://gh.xxooo.cf/https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.57/zhaocai_shell.exe",
     "download_urls":  [
-                          "https://gh.xxooo.cf/https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.56/zhaocai_shell.exe",
-                          "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.56/zhaocai_shell.exe"
+                          "https://gh.xxooo.cf/https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.57/zhaocai_shell.exe",
+                          "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.57/zhaocai_shell.exe"
                       ],
-    "proxy_download_url":  "https://gh.xxooo.cf/https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.56/zhaocai_shell.exe",
-    "github_download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.56/zhaocai_shell.exe",
-    "fallback_download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.56/zhaocai_shell.exe",
-    "sha256":  "ba6141eccbc23e3cb6c72427745691a0ba65bd1b649745c83231a66dbf7a51df",
-    "release_url":  "https://github.com/iuwoca/zhaocai-updates/releases/tag/v1.0.56",
+    "proxy_download_url":  "https://gh.xxooo.cf/https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.57/zhaocai_shell.exe",
+    "github_download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.57/zhaocai_shell.exe",
+    "fallback_download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.57/zhaocai_shell.exe",
+    "sha256":  "f8fd18ee085c661c0b1701a5e06970985cb8714ebdfa81280b7139d0f7291980",
+    "release_url":  "https://github.com/iuwoca/zhaocai-updates/releases/tag/v1.0.57",
     "title":  "招财系统需要更新",
-    "message":  "已发布 1.0.56 版本，请更新后继续使用。"
+    "message":  "已发布 1.0.57 版本，请更新后继续使用。"
 }
