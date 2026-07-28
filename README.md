@@ -2,6 +2,23 @@
 
 This public repository hosts update manifests and release assets for Zhaocai.
 
+## Download Proxies
+
+Clients read `download-proxies.json` before downloading an update. Change the
+ordered `download_proxy_prefixes` list to switch providers without rebuilding
+the Windows or macOS application. Each prefix must use HTTPS and is prepended
+to the original GitHub Release asset URL.
+
+Use an empty list to disable download proxies and use GitHub directly:
+
+```json
+{
+  "download_proxy_prefixes": []
+}
+```
+
+The client always keeps the original GitHub URL as the final fallback.
+
 ## macOS Build Action
 
 The `Build macOS Release` workflow builds the macOS shell and publishes it to this repository's Release assets as:
