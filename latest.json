@@ -1,14 +1,14 @@
 {
-    "latest_version":  "1.0.62",
-    "minimum_version":  "1.0.62",
-    "download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.62/zhaocai_shell.exe",
+    "latest_version":  "1.0.63",
+    "minimum_version":  "1.0.63",
+    "download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.63/zhaocai_shell.exe",
     "download_urls":  [
-                          "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.62/zhaocai_shell.exe"
+                          "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.63/zhaocai_shell.exe"
                       ],
-    "github_download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.62/zhaocai_shell.exe",
-    "fallback_download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.62/zhaocai_shell.exe",
-    "sha256":  "9a5aec2dcb6bb2f489b6e63cf6ea9f667cfe224c07e535cad7718095c86ab2d2",
-    "release_url":  "https://github.com/iuwoca/zhaocai-updates/releases/tag/v1.0.62",
+    "github_download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.63/zhaocai_shell.exe",
+    "fallback_download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.63/zhaocai_shell.exe",
+    "sha256":  "4bd0bac07c7d257c5a5c73732c95aa8c6b0a69aeb35536b9bc29b5c4ffebddae",
+    "release_url":  "https://github.com/iuwoca/zhaocai-updates/releases/tag/v1.0.63",
     "title":  "招财系统需要更新",
-    "message":  "已发布 1.0.62 版本，请更新后继续使用。"
+    "message":  "已发布 1.0.63 版本，请更新后继续使用。"
 }
