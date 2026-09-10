@@ -1,14 +1,14 @@
 {
-    "latest_version":  "1.0.67",
-    "minimum_version":  "1.0.67",
-    "download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.67/zhaocai_shell.exe",
+    "latest_version":  "1.0.68",
+    "minimum_version":  "1.0.68",
+    "download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.68/zhaocai_shell.exe",
     "download_urls":  [
-                          "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.67/zhaocai_shell.exe"
+                          "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.68/zhaocai_shell.exe"
                       ],
-    "github_download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.67/zhaocai_shell.exe",
-    "fallback_download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.67/zhaocai_shell.exe",
-    "sha256":  "b90970b7af4b3497f6afafbb07ce603df1b406895e1feadd2823adaed8cf05d4",
-    "release_url":  "https://github.com/iuwoca/zhaocai-updates/releases/tag/v1.0.67",
+    "github_download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.68/zhaocai_shell.exe",
+    "fallback_download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.68/zhaocai_shell.exe",
+    "sha256":  "bce5a3cfb5c04b5d0dca8b042b01912718504a5a77b84e7735a8f4e662152064",
+    "release_url":  "https://github.com/iuwoca/zhaocai-updates/releases/tag/v1.0.68",
     "title":  "招财系统需要更新",
-    "message":  "已发布 1.0.67，集星达人列表新增近30日总销售额。"
+    "message":  "星图列表新增播放量均值和点赞量均值，合并两组视频后按发布时间取最新15条计算。"
 }
