@@ -1,14 +1,14 @@
 {
-    "latest_version":  "1.0.68",
-    "minimum_version":  "1.0.68",
-    "download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.68/zhaocai_shell.exe",
+    "latest_version":  "1.0.69",
+    "minimum_version":  "1.0.69",
+    "download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.69/zhaocai_shell.exe",
     "download_urls":  [
-                          "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.68/zhaocai_shell.exe"
+                          "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.69/zhaocai_shell.exe"
                       ],
-    "github_download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.68/zhaocai_shell.exe",
-    "fallback_download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.68/zhaocai_shell.exe",
-    "sha256":  "bce5a3cfb5c04b5d0dca8b042b01912718504a5a77b84e7735a8f4e662152064",
-    "release_url":  "https://github.com/iuwoca/zhaocai-updates/releases/tag/v1.0.68",
+    "github_download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.69/zhaocai_shell.exe",
+    "fallback_download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.69/zhaocai_shell.exe",
+    "sha256":  "4596617d42b1a9a30ec94e10124fbc83512889064ee2bd39e29c3a874e637406",
+    "release_url":  "https://github.com/iuwoca/zhaocai-updates/releases/tag/v1.0.69",
     "title":  "招财系统需要更新",
-    "message":  "星图列表新增播放量均值和点赞量均值，合并两组视频后按发布时间取最新15条计算。"
+    "message":  "修复小红书笔记导出 Excel 失败，清理正文中的非法控制字符；同步更新 Windows 和 macOS 版本。"
 }
