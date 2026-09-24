@@ -1,14 +1,14 @@
 {
-    "latest_version":  "1.0.70",
-    "minimum_version":  "1.0.70",
-    "download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.70/zhaocai_shell.exe",
+    "message":  "已发布 1.0.71，包含达人静默同步、运行用户后台、平台登录修复及星图抖音号修复。",
+    "fallback_download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.71/zhaocai_shell.exe",
+    "minimum_version":  "1.0.71",
+    "release_url":  "https://github.com/iuwoca/zhaocai-updates/releases/tag/v1.0.71",
+    "download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.71/zhaocai_shell.exe",
+    "github_download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.71/zhaocai_shell.exe",
+    "latest_version":  "1.0.71",
+    "sha256":  "21da484d95c0b52462bb7fcc6dbff56f301d4e8749765e763f026446f6718728",
     "download_urls":  [
-                          "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.70/zhaocai_shell.exe"
+                          "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.71/zhaocai_shell.exe"
                       ],
-    "github_download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.70/zhaocai_shell.exe",
-    "fallback_download_url":  "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.70/zhaocai_shell.exe",
-    "sha256":  "ae15b8b65d03c758565827545fd0bca1251cf5a07bf181b170a4fb2bc70fa130",
-    "release_url":  "https://github.com/iuwoca/zhaocai-updates/releases/tag/v1.0.70",
-    "title":  "招财系统需要更新",
-    "message":  "星图达人昵称改用 get_author_base_info.nick_name，粉丝数改用 check_author_display.follower。"
+    "title":  "招财系统 1.0.71 更新"
 }
