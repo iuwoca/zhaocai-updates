@@ -1,14 +1,14 @@
 {
-    "latest_version": "1.0.70",
-    "minimum_version": "1.0.70",
-    "download_url": "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.70/zhaocai_shell_macos.dmg",
+    "latest_version": "1.0.71",
+    "minimum_version": "1.0.71",
+    "download_url": "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.71/zhaocai_shell_macos.dmg",
     "download_urls": [
-        "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.70/zhaocai_shell_macos.dmg"
+        "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.71/zhaocai_shell_macos.dmg"
     ],
-    "github_download_url": "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.70/zhaocai_shell_macos.dmg",
-    "fallback_download_url": "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.70/zhaocai_shell_macos.dmg",
-    "sha256": "c338899d8e71f32a2178042d9ed663ad0dda416f3382645b0b0e3e70094b2eb8",
-    "release_url": "https://github.com/iuwoca/zhaocai-updates/releases/tag/v1.0.70",
+    "github_download_url": "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.71/zhaocai_shell_macos.dmg",
+    "fallback_download_url": "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.71/zhaocai_shell_macos.dmg",
+    "sha256": "fdf9188cf1a251d8d3dd62153dbd34c99978ea692ee51c760c23cf2f6ab01e31",
+    "release_url": "https://github.com/iuwoca/zhaocai-updates/releases/tag/v1.0.71",
     "title": "macOS update",
     "message": "Published macOS build."
 }
