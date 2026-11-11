@@ -1,14 +1,14 @@
 {
-  "latest_version": "1.0.73",
-  "minimum_version": "1.0.73",
-  "download_url": "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.73/zhaocai_shell.exe",
-  "download_urls": [
-    "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.73/zhaocai_shell.exe"
-  ],
-  "github_download_url": "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.73/zhaocai_shell.exe",
-  "fallback_download_url": "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.73/zhaocai_shell.exe",
-  "sha256": "83fa3201e8c4826f94e752af1d225e35c81abf2401486bd442c9a62fe8f575ae",
-  "release_url": "https://github.com/iuwoca/zhaocai-updates/releases/tag/v1.0.73",
-  "title": "招财系统需要更新",
-  "message": "已发布 1.0.73，新增星图视频报价和互动指标、定制视频预期 CPE，以及蒲公英合作笔记外溢进店中位数；修复星图虚拟电话与导入显示。请更新后继续使用。"
+    "latest_version": "1.0.74",
+    "minimum_version": "1.0.74",
+    "download_url": "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.74/zhaocai_shell.exe",
+    "download_urls": [
+        "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.74/zhaocai_shell.exe"
+    ],
+    "github_download_url": "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.74/zhaocai_shell.exe",
+    "fallback_download_url": "https://github.com/iuwoca/zhaocai-updates/releases/download/v1.0.74/zhaocai_shell.exe",
+    "sha256": "b55e9fcd6dc0804a79135b6028c7681b02c89fb59b720390f0f9bfccf19dcc91",
+    "release_url": "https://github.com/iuwoca/zhaocai-updates/releases/tag/v1.0.74",
+    "title": "招财系统版本更新",
+    "message": "已发布 1.0.74：新增导出到飞书电子表格，保留 Excel 表头和内容；Windows、Mac 安装包内置飞书 CLI，首次使用无需另行下载，扫码绑定后即可导出。"
 }
